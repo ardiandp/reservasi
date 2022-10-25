@@ -35,8 +35,44 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Kelas:</strong>
+                <strong>No Handphone:</strong>
                 <input class="form-control" name="no_hp" placeholder="Kelas"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Alamat:</strong>
+                <input class="form-control" name="alamat" placeholder="Kelas"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Berat Badan:</strong>
+                <input class="form-control" name="berat_badan" placeholder="Kelas"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Lokasi Perawatan:</strong>
+                <input class="form-control" name="lokasi_perawatan" placeholder="Kelas"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Gerai:</strong>
+                <input class="form-control" name="gerai" placeholder="Kelas"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Riwayat Penyakit:</strong>
+                <input class="form-control" name="riwayat_penyakit" placeholder="Kelas"></input>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Keterangan Lain:</strong>
+                <input class="form-control" name="keterangan_lain" placeholder="Kelas"></input>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-3">

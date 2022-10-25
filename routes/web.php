@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SlimmingController;
+use App\Http\Controllers\ThemeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::resource('slimming', SlimmingController::class);
+Route::resource('theme',ThemeController::class);

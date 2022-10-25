@@ -36,8 +36,44 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Kelas:</strong>
+                    <strong>No Handphone</strong>
                     <input class="form-control" name="no_hp" placeholder="Kelas" value="{{ $slimming->no_hp }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Alamat</strong>
+                    <textarea class="form-control"> {{$slimming->alamat }} </textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Berat Badan</strong>
+                    <input class="form-control" name="berat_badan" placeholder="Kelas" value="{{ $slimming->berat_badan }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Lokasi Perwatan</strong>
+                    <input class="form-control" name="lokasi_perawatan" placeholder="Kelas" value="{{ $slimming->lokasi_perawatan }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Gerai</strong>
+                    <input class="form-control" name="gerai" placeholder="Kelas" value="{{ $slimming->gerai }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Riwayat Penyakit</strong>
+                    <input class="form-control" name="riwayat_penyakit" placeholder="Kelas" value="{{ $slimming->riwayat_penyakit }}">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Keterangan</strong>
+                    <input class="form-control" name="keterangan" placeholder="Kelas" value="{{ $slimming->keterangan_lain }}">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-3">

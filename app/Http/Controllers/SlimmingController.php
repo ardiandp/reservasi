@@ -41,6 +41,12 @@ class SlimmingController extends Controller
         $request->validate([
             'nama' => 'required',
             'no_hp' => 'required',
+            'alamat'=> 'required',
+            'berat_badan'=> 'required',
+            'lokasi_perawatan'=> 'required',
+            'gerai'=> 'required',
+            'riwayat_penyakit'=> 'required',
+            'keterangan_lain'=> 'required',
         ]);
       
         Slimming::create($request->all());
@@ -84,6 +90,12 @@ class SlimmingController extends Controller
         $request->validate([
             'nama' => 'required',
             'no_hp' => 'required',
+            'alamat'=> 'required',
+            'berat_badan'=> 'required',
+            'lokasi_perawatan'=> 'required',
+            'gerai'=> 'required',
+            'riwayat_penyakit'=> 'required',
+            'keterangan_lain'=> 'required',
         ]);
       
         $slimming->update($request->all());
