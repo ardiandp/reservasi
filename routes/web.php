@@ -15,9 +15,10 @@ use App\Http\Controllers\DaftarController;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
+Route::get('/',[DaftarController::class,'index']);
 
 Route::resource('slimming', SlimmingController::class);
 Route::resource('theme',ThemeController::class);

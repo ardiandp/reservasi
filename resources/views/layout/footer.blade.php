@@ -5,7 +5,7 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">Dian Mustik</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
@@ -13,11 +13,11 @@
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="{{url('AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{url('public/AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
-<script src="{{url('AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{url('public/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{url('AdminLTE/dist/js/adminlte.min.js')}}"></script>
+<script src="{{url('public/AdminLTE/dist/js/adminlte.min.js')}}"></script>
 
 </body>
 </html>
