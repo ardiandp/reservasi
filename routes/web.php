@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SlimmingController;
 use App\Http\Controllers\ThemeController;
+use App\Http\Controllers\DaftarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,8 @@ Route::get('/', function () {
 
 Route::resource('slimming', SlimmingController::class);
 Route::resource('theme',ThemeController::class);
+//link daftar user
+Route::get('daftar', [DaftarController::class,'index']);
+Route::get('daftar-slimming', [DaftarController::class,'slimming']);
+Route::get('daftar-spahamil', [DaftarController::class,'spahamil']);
+Route::get('daftar-pascalahiran', [DaftarController::class,'pascalahiran']);
