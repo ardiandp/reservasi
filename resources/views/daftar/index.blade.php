@@ -7,9 +7,9 @@
       <div class="container">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0"> Top Navigation <small>Example 3.0</small></h1>
+            <h1 class="m-0"> Daftar Perawatan Online</small></h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="#">Layout</a></li>
@@ -20,20 +20,30 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+   
+
+
 
     <!-- Main content -->
     <div class="content">
       <div class="container">
-        <div class="row">
-       
-          
-        </div>
-          @endif
-          <!-- /.col-md-6 -->
+
+                  
+    @if ($message = Session::get('success'))
+    <div class="alert alert-success alert-dismissible">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h5><i class="icon fas fa-check"></i> Alert!</h5>
+      <p>{{ $message }}</p>
+    </div>
+    @endif
+
+
+       <div class="row">
+      <!-- /.col-md-6 -->
           <div class="col-lg-4">
             <div class="card card-primary card-outline">
               <div class="card-header">
-                <h5 class="card-title m-0">Featured</h5>
+                <h5 class="card-title m-0">Pasca Lahiran</h5>
               </div>
               <div class="card-body">
                 <h6 class="card-title">Special title treatment</h6>
@@ -47,7 +57,7 @@
           <div class="col-lg-4">
             <div class="card card-primary card-outline">
               <div class="card-header">
-                <h5 class="card-title m-0">Featured</h5>
+                <h5 class="card-title m-0">Slimming</h5>
               </div>
               <div class="card-body">
                 <h6 class="card-title">Special title treatment</h6>
@@ -61,7 +71,7 @@
           <div class="col-lg-4">
             <div class="card card-primary card-outline">
               <div class="card-header">
-                <h5 class="card-title m-0">Featured</h5>
+                <h5 class="card-title m-0">spa Hamil</h5>
               </div>
               <div class="card-body">
                 <h6 class="card-title">Special title treatment</h6>
