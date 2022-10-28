@@ -34,7 +34,8 @@
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{url('daftar')}}">Kembali <a></h3>
                     </div>
-              <form>
+                    <form action="store" method="POST">
+                      @csrf <!-- {{ csrf_field() }} -->
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Masukan Nam Lengkap</label>
@@ -67,14 +68,12 @@
                   <div class="form-group">
                     <label for="exampleInputPassword1">Keterangan Lain</label>
                     <input class="form-control" name="keterangan_lain" placeholder="Kelas"></input>
-                  </div>                 
-                
-                 
-                 
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>                                
+                  <div class="form-group">
+                      <button type="reset" class="btn btn-default">Batal</button>
+                      <button type="submit" class="btn btn-success">Simpan</button>
                   </div>
+                </form>
                 </div>
                 <!-- /.card-body -->
               </div>

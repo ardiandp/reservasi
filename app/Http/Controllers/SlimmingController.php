@@ -51,7 +51,7 @@ class SlimmingController extends Controller
       
         Slimming::create($request->all());
        
-        return redirect()->route('slimming.index')
+        return redirect()->route('daftar.index')
                         ->with('success','Data created successfully.');
 
     }

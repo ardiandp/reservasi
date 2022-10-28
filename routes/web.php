@@ -25,5 +25,6 @@ Route::resource('theme',ThemeController::class);
 //link daftar user
 Route::get('daftar', [DaftarController::class,'index']);
 Route::get('daftar-slimming', [DaftarController::class,'slimming']);
+Route::post('store',[DaftarController::class,'store']);
 Route::get('daftar-spahamil', [DaftarController::class,'spahamil']);
 Route::get('daftar-pascalahiran', [DaftarController::class,'pascalahiran']);

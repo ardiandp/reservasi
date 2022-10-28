@@ -26,6 +26,9 @@
       <div class="container">
         <div class="row">
        
+          
+        </div>
+          @endif
           <!-- /.col-md-6 -->
           <div class="col-lg-4">
             <div class="card card-primary card-outline">
