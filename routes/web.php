@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SlimmingController;
 use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\DaftarController;
+use App\Http\Controllers\KontakController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +29,6 @@ Route::get('daftar-slimming', [DaftarController::class,'slimming']);
 Route::post('store',[DaftarController::class,'store']);
 Route::get('daftar-spahamil', [DaftarController::class,'spahamil']);
 Route::get('daftar-pascalahiran', [DaftarController::class,'pascalahiran']);
+
+//link Kontak 
+Route::get('kontak', [KontakController::class, 'index'])->name('kontak.index');
