@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SlimmingController;
 use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\KontakController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,3 +34,11 @@ Route::get('daftar-pascalahiran', [DaftarController::class,'pascalahiran']);
 
 //link Kontak 
 Route::get('kontak', [KontakController::class, 'index'])->name('kontak.index');
+
+// link admin 
+Route::get('admin',[AdminController::class,'index']);
+Route::get('admin/pascalahiran',[AdminController::class,'pascalahiran']);
+Route::get('admin/slimming',[AdminController::class,'slimming']);
+Route::get('admin/slimming/edit/{id}',[AdminController::class,'edit_slimming']);
+Route::get('admin/spahamil',[AdminController::class,'spahamil']);
+
