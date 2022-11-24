@@ -55,11 +55,20 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Lokasi Perwatan</label>
-                    <input class="form-control" name="lokasi_perawatan" placeholder="Kelas"></input>
+                    <select name="lokasi_perawatan" class="form-control">
+                      <option value="Homecare"> Dirumah </option>
+                      <option value="Gerai"> Gerai </option>
+                    </select>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Gerai</label>
-                    <input class="form-control" name="gerai" placeholder="Kelas"></input>
+                    <select name="gerai" class="form-control">
+                    <option value="Dirumah"> == Dirumah == </option>
+                     @foreach ($gerai as $data )
+                      <option value="{{ $data->kode_gerai }}">{{ $data->nama_gerai }} </option>
+                      @endforeach
+                    </select>
+                  
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Riwayat Penyakit</label>
@@ -70,17 +79,8 @@
                     <input class="form-control" name="keterangan_lain" placeholder="Kelas"></input>
                   </div>    
                   
-                  <div id="drop-down" name="drop-down">
-                    <label for="travel">Lokasi Perawatan </label>
-                    <select name="travel" class="form-control" id="travel" onchange=showHide()>
-                       <option value="1">Gerai</option>
-                       <option value="0" selected>Homecare / Dirumah</option>
-                    </select>
-                 </div>
-                 <div name="hidden-panel" id="hidden-panel">
-                    <label for="country">Name of the country you visited: </label>
-                    <input type="text" class="form-control" name="country" id="country"/>
-                 </div>
+                 
+              
 
                   <div class="form-group">
                       <button type="reset" class="btn btn-default">Batal</button>
@@ -127,14 +127,3 @@
 
   @include('layout.footer');
 
-
-  <script type="text/javascript">
-    function showHide() {
-       let travelhistory = document.getElementById('travel')
-       if (travelhistory.value == 1) {
-           document.getElementById('hidden-panel').style.display = 'block'
-       } else {
-           document.getElementById('hidden-panel').style.display = 'none'
-       }
-   }
-   </script>

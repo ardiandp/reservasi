@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Slimming;
+use App\Models\Gerai;
 
 class AdminController extends Controller
 {
@@ -22,7 +23,8 @@ class AdminController extends Controller
 
     public function edit_slimming()
     {
-        return view ('admin.editslimming');
+        $gerai= Gerai::All();
+        return view ('admin.editslimming',compact('gerai'));
     }
 
     public function pascalahiran()

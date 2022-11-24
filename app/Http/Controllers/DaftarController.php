@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Slimming;
+use App\Models\Gerai;
 
 class DaftarController extends Controller
 {
@@ -14,7 +15,8 @@ class DaftarController extends Controller
 
     public function slimming()
     {
-    return view ('daftar.slimming');
+        $gerai= Gerai::All();
+        return view ('daftar.slimming',compact('gerai'));
     }
 
     public function store(Request $request)
@@ -44,7 +46,8 @@ class DaftarController extends Controller
 
     public function spahamil()
     {
-    return view ('daftar.spahamil');
+      
+        return view ('daftar.spahamil');
     }
     
 }
