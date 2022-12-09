@@ -21,10 +21,13 @@ class AdminController extends Controller
         ->withSlimming($slimming);
     }
 
-    public function edit_slimming()
+    public function edit_slimming($id)
     {
+        $slimming=Slimming::find($id);
         $gerai= Gerai::All();
-        return view ('admin.editslimming',compact('gerai'));
+        return view ('admin.editslimming')
+        ->withGerai($gerai)
+        ->withSlimming($slimming);
     }
 
     public function pascalahiran()
