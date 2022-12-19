@@ -13,6 +13,13 @@ class Slimming extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'nama','no_hp','alamat','berat_badan','lokasi_perawatan','gerai','riwayat_penyakit','keterangan_lain'
+        'nama',
+        'no_hp',
+        'alamat',
+        'berat_badan',
+        'lokasi_perawatan',
+        'gerai',
+        'riwayat_penyakit',
+        'keterangan_lain'
     ];
 }
