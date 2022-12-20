@@ -20,7 +20,6 @@ class geraiFactory extends Factory
             'nama_gerai'=>$this->faker->name(),
             'alamat'=>$this->faker->streetAddress(),
             'whatsapp'=>$this->faker->phoneNumber(),
-            'telp'=>$this->faker->phoneNumber(),
             'gambar'=>$this->faker->name(),
         ];
     }

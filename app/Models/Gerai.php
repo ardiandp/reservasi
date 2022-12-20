@@ -14,7 +14,6 @@ class Gerai extends Model
         'nama_gerai',
         'alamat',
         'whatsapp',
-        'tepl',
         'gambar',
     ];
 }
