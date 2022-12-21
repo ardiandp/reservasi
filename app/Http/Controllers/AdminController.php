@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Slimming;
 use App\Models\Gerai;
+use App\Models\Pascamelahirkan;
 
 class AdminController extends Controller
 {
@@ -32,7 +33,22 @@ class AdminController extends Controller
 
     public function pascalahiran()
     {
-        echo "pasca lahiran";
+        $pascamelahirkan=Pascamelahirkan::latest()->get();
+        return view('admin.pascalahiran')
+        ->withPascamelahirkan($pascamelahirkan);
+    }
+
+    public function edit_pascalahiran($id)
+    {
+        $pascamelahirkan=Pascamelahirkan::find($id);
+        return view('admin.editpascalahiran')
+        ->withPascamelahirkan($pascamelahirkan);
+    }
+
+    public function update_slimming(Request $request ,$id)
+    {
+        $slimming = Slimming::find($id)->update($request->all()); 
+        return redirect('admin/slimming');
     }
 
     public function spahamil()

@@ -11,7 +11,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{ url('/admin') }}">Home</a></li>
               <li class="breadcrumb-item"><a href="{{url('daftar')}}">daftar</a></li>
               <li class="breadcrumb-item active">Slimming</li>
             </ol>
@@ -45,7 +45,8 @@
                   <td>{{$data->no_hp}}</td>
                   <td>{{ $data->berat_badan }}</td>
                   <td> {{ $data->lokasi_perawatan }}</td>
-                  <td><a href="{{ url('admin/slimming/edit/'.$data->id) }}" class="btn btn-sm btn-flat btn-warning">test</a></td>
+                  <td><a href="{{ url('admin/slimming/edit/'.$data->id) }}" class="btn btn-sm btn-flat btn-warning">Edit</a>
+                      <a href="{{ url('admin/slimming/hapus/'.$data->id) }}" class="btn btn-sm btn-flat btn-danger">Hapus</td>
                 </tr>
                  @empty
                    data Belum ada

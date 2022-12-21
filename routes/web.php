@@ -38,7 +38,12 @@ Route::get('kontak', [KontakController::class, 'index'])->name('kontak.index');
 // link admin 
 Route::get('admin',[AdminController::class,'index']);
 Route::get('admin/pascalahiran',[AdminController::class,'pascalahiran']);
+Route::get('admin/pascalahiran/edit/{id}',[AdminController::class,'edit_pascalahiran']);
+
+// slimming 
 Route::get('admin/slimming',[AdminController::class,'slimming']);
 Route::get('admin/slimming/edit/{id}',[AdminController::class,'edit_slimming']);
+Route::post('admin/slimming/update/{id}',[AdminController::class,'update_slimming']);
+//spa hamil
 Route::get('admin/spahamil',[AdminController::class,'spahamil']);
 

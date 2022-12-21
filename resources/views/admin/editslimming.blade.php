@@ -34,7 +34,7 @@
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{url('admin/slimming')}}">Kembali <a></h3>
                     </div>
-                    <form action="store" method="POST">
+                    <form method="POST" action="{{ url('admin/slimming/update', $slimming->id ) }}">
                       @csrf <!-- {{ csrf_field() }} -->
                 <div class="card-body">
                   <div class="form-group">
@@ -78,10 +78,6 @@
                     <label for="exampleInputPassword1">Keterangan Lain</label>
                     <input class="form-control" value="{{ $slimming->keterangan_lain }}" name="keterangan_lain" placeholder="Kelas"></input>
                   </div>    
-                  
-                 
-              
-
                   <div class="form-group">
                       <button type="reset" class="btn btn-default">Batal</button>
                       <button type="submit" class="btn btn-success">Simpan</button>
