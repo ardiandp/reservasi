@@ -39,11 +39,16 @@ Route::get('kontak', [KontakController::class, 'index'])->name('kontak.index');
 Route::get('admin',[AdminController::class,'index']);
 Route::get('admin/pascalahiran',[AdminController::class,'pascalahiran']);
 Route::get('admin/pascalahiran/edit/{id}',[AdminController::class,'edit_pascalahiran']);
+Route::post('admin/pascalahiran/update/{id}',[AdminController::class,'update_pascalahiran']);
+Route::get('admin/pascalahiran/hapus/{id}',[AdminController::class,'hapus_pascalahiran']);
+
 
 // slimming 
 Route::get('admin/slimming',[AdminController::class,'slimming']);
 Route::get('admin/slimming/edit/{id}',[AdminController::class,'edit_slimming']);
 Route::post('admin/slimming/update/{id}',[AdminController::class,'update_slimming']);
+Route::get('admin/slimming/hapus/{id}',[AdminController::class,'hapus_slimming']);
+
 //spa hamil
 Route::get('admin/spahamil',[AdminController::class,'spahamil']);
 

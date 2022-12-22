@@ -34,7 +34,7 @@
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{url('admin/pascalahiran')}}">Kembali <a></h3>
                     </div>
-                    <form action="store" method="POST">
+                    <form method="POST" action="{{ url('admin/pascalahiran/update', $pascamelahirkan->id ) }}">
                       @csrf <!-- {{ csrf_field() }} -->
                 <div class="card-body">
                   <div class="form-group">

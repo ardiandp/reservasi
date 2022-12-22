@@ -45,9 +45,32 @@ class AdminController extends Controller
         ->withPascamelahirkan($pascamelahirkan);
     }
 
+    public function update_pascalahiran(Request $request, $id)
+    {
+        $pascamelahirkan = Pascamelahirkan::find($id)->update($request->all());
+        return redirect('/admin/pascalahiran');
+    }
+
+    public function hapus_pascalahiran($id)
+    {
+        $pascamelahirkan = Pascamelahirkan::find($id);
+        $pascamelahirkan->delete();
+        
+        return redirect('/admin/pascalahiran');
+
+    }
+
     public function update_slimming(Request $request ,$id)
     {
         $slimming = Slimming::find($id)->update($request->all()); 
+        return redirect('admin/slimming');
+    }
+
+    public function hapus_slimming($id)
+    {
+        $slimming = Slimming::find($id);
+        $slimming->delete();
+
         return redirect('admin/slimming');
     }
 

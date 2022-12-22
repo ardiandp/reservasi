@@ -11,9 +11,9 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{ url('/admin') }}">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{url('daftar')}}">daftar</a></li>
-              <li class="breadcrumb-item active">Slimming</li>
+              <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{url('/admin')}}">Admin</a></li>
+              <li class="breadcrumb-item active">Pasca Lahiran</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -45,7 +45,8 @@
                   <td>{{$data->no_hp}}</td>
                   <td>{{ $data->berat_badan }}</td>
                   <td> {{ $data->hpl }}</td>
-                  <td><a href="{{ url('admin/pascalahiran/edit/'.$data->id) }}" class="btn btn-sm btn-flat btn-warning">test</a></td>
+                  <td><a href="{{ url('admin/pascalahiran/edit/'.$data->id) }}" class="btn btn-sm btn-flat btn-warning">Edit</a>
+                    <a href="{{ url('admin/pascalahiran/hapus/'.$data->id) }}" class="btn btn-sm btn-flat btn-danger">Hapus</a></td>
                 </tr>
                  @empty
                    data Belum ada
