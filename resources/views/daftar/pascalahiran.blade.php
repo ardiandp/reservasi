@@ -34,32 +34,68 @@
                     <div class="card-header">
                       <h3 class="card-title"><a href="{{url('daftar')}}">Kembali <a></h3>
                     </div>
-              <form>
+              <form method="POST" action="simpanpascamelahirkan">
+                @csrf <!-- {{ csrf_field() }} -->
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label for="exampleInputEmail1">Nama Lengkap</label>
+                    <input type="text" required name="nama" class="form-control" id="exampleInputEmail1" placeholder="Nama Lengkap">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">No Handphone</label>
+                    <input type="text" required name="no_hp" class="form-control" id="exampleInputPassword1" placeholder="No Handphone">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text">Upload</span>
-                      </div>
-                    </div>
+                    <label for="exampleInputPassword1">Alamat</label>
+                    <textarea name="alamat" required class="form-control" placeholder="Alamat lengkap"> </textarea>
                   </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Rencana Lahiran</label>
+                    <input type="text" required name="rencana_lahiran" class="form-control" id="exampleInputPassword1" placeholder="Rencana Lahiran">
                   </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">HPL (rencana Lahiran)</label>
+                    <input type="text" required name="hpl" class="form-control" id="exampleInputPassword1" placeholder="HPL">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Berat Badan</label>
+                    <input type="text" required name="berat_badan" class="form-control" id="exampleInputPassword1" placeholder="berat badan">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Anak Ke</label>
+                    <input type="text" required name="anak_ke" class="form-control" id="exampleInputPassword1" placeholder="Anak ke">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">proses Lahiran</label>
+                    <input type="text" required name="proses_lahiran" class="form-control" id="exampleInputPassword1" placeholder="Proses lahiran">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Rencana ASI </label>
+                    <input type="text" required name="rencana_asi" class="form-control" id="exampleInputPassword1" placeholder="Rencana ASI">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Implan</label>
+                    <input type="text" required name="implan" class="form-control" id="exampleInputPassword1" placeholder="Implan">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Perawatan</label>
+                    <input type="text" required name="perawatan" class="form-control" id="exampleInputPassword1" placeholder="Perawatan">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Slimming</label>
+                    <input type="text" required name="slimming" class="form-control" id="exampleInputPassword1" placeholder="Slimming">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Riwayat Penyakit</label>
+                   <textarea name="riwayat_penyakit" required class="form-control" placeholder="Riwayat Penyakit"> </textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-flat btn-sm btn-success" value="Simpan data">
+                    <input type="reset" class="btn btn-flat btn-sm btn-default" value="Kosongkan data">
+                  </div>
+                  
+                </form>
                 </div>
                 <!-- /.card-body -->
               </div>

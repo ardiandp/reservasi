@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Slimming;
 use App\Models\Gerai;
 use App\Models\Pascamelahirkan;
+use App\Models\Spahamil;
 
 class AdminController extends Controller
 {
@@ -76,6 +77,8 @@ class AdminController extends Controller
 
     public function spahamil()
     {
-        echo "spa hamil";
+        $spahamil = Spahamil::latest()->get(); 
+        return view ('admin.spahamil')
+        ->withSpahamil($spahamil);
     }
 }

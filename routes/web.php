@@ -30,7 +30,9 @@ Route::get('daftar', [DaftarController::class,'index']);
 Route::get('daftar-slimming', [DaftarController::class,'slimming']);
 Route::post('store',[DaftarController::class,'store']);
 Route::get('daftar-spahamil', [DaftarController::class,'spahamil']);
+Route::post('simpanspahamil',[DaftarController::class,'spahamil_simpan']);
 Route::get('daftar-pascalahiran', [DaftarController::class,'pascalahiran']);
+Route::post('simpanpascamelahirkan',[DaftarController::class,'pascalahiran_simpan']);
 
 //link Kontak 
 Route::get('kontak', [KontakController::class, 'index'])->name('kontak.index');
@@ -41,6 +43,7 @@ Route::get('admin/pascalahiran',[AdminController::class,'pascalahiran']);
 Route::get('admin/pascalahiran/edit/{id}',[AdminController::class,'edit_pascalahiran']);
 Route::post('admin/pascalahiran/update/{id}',[AdminController::class,'update_pascalahiran']);
 Route::get('admin/pascalahiran/hapus/{id}',[AdminController::class,'hapus_pascalahiran']);
+
 
 
 // slimming 

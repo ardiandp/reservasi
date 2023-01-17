@@ -34,7 +34,7 @@
                     <th>Nama</th>
                     <th>Handphone</th>
                     <th>Berat Badan(s)</th>
-                    <th>Lokasi Perawatan</th>
+                    <th>Status</th>
                     <th>Aksi</th>
                   </tr>
                   </thead>
@@ -44,7 +44,7 @@
                   <td>{{ $data->nama }}</td>
                   <td>{{$data->no_hp}}</td>
                   <td>{{ $data->berat_badan }}</td>
-                  <td> {{ $data->hpl }}</td>
+                  <td> {{ $data->status }}</td>
                   <td><a href="{{ url('admin/pascalahiran/edit/'.$data->id) }}" class="btn btn-sm btn-flat btn-warning">Edit</a>
                     <a href="{{ url('admin/pascalahiran/hapus/'.$data->id) }}" class="btn btn-sm btn-flat btn-danger">Hapus</a></td>
                 </tr>

@@ -51,52 +51,53 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Rencana Lahiran</label>
-                    <input class="form-control" {{ $pascamelahirkan->rencana_lahiran }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->rencana_lahiran }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">HPL</label>
-                    <input class="form-control" {{ $pascamelahirkan->hpl }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->hpl }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Berat Badan</label>
-                    <input class="form-control" {{ $pascamelahirkan->berat_badan }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->berat_badan }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Anak ke</label>
-                    <input class="form-control" {{ $pascamelahirkan->anak_ke }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->anak_ke }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Proses Lahiran</label>
-                    <input class="form-control" {{ $pascamelahirkan->proses_lahiran }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->proses_lahiran }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Rencana ASI</label>
-                    <input class="form-control" {{ $pascamelahirkan->rencana_asi }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->rencana_asi }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Implan</label>
-                    <input class="form-control" {{ $pascamelahirkan->implan }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->implan }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Perawatan </label>
-                    <input class="form-control" {{ $pascamelahirkan->perawatan }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->perawatan }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Slimming</label>
-                    <input class="form-control" {{ $pascamelahirkan->slimming }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $pascamelahirkan->slimming }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                  
                   <div class="form-group">
                     <label for="exampleInputPassword1">Riwayat Penyakit</label>
                     <input class="form-control" value="{{ $pascamelahirkan->riwayat_penyakit }}" name="riwayat_penyakit" placeholder="Kelas"></input>
-                  </div>                 
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Keterangan Lain</label>
-                    <input class="form-control" value="{{ $pascamelahirkan->keterangan_lain }}" name="keterangan_lain" placeholder="Kelas"></input>
-                  </div>    
+                  </div>             
                   <div class="form-group">
                     <label for="exampleInputPassword1">status</label>
-                    <input class="form-control" {{ $pascamelahirkan->status }}name="berat_badan" placeholder="Kelas"></input>
+                   <select name="status" class="form-control">
+                    <option value="aru">Baru</option>
+                    <option value="menunggu">Menunggu </option>
+                    <option value="selesai">Selesai</option>
+                    <option value="batal">Batal</option>
+                   </select>
                   </div>
                   
                  
