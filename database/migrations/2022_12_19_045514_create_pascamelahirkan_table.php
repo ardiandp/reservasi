@@ -19,17 +19,17 @@ return new class extends Migration
             $table->string('nama');
             $table->string('no_hp');
             $table->string('alamat');
-            $table->string('rencana_lahiran');
-            $table->string('hpl');
-            $table->string('berat_badan');
-            $table->string('anak_ke');
-            $table->string('proses_lahiran');
-            $table->string('rencana_asi');
-            $table->string('implan');
-            $table->string('perawatan');
-            $table->string('slimming');
-            $table->string('riwayat_penyakit');
-            $table->string('status');
+            $table->string('rencana_lahiran')->nullable();
+            $table->string('hpl')->nullable();
+            $table->string('berat_badan')->nullable();
+            $table->string('anak_ke')->nullable();
+            $table->string('proses_lahiran')->nullable();
+            $table->string('rencana_asi')->nullable();
+            $table->string('implan')->nullable();
+            $table->string('perawatan')->nullable();
+            $table->string('slimming')->nullable();
+            $table->string('riwayat_penyakit')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

@@ -16,6 +16,11 @@ class AdminController extends Controller
         return view ('admin.index');
     }
 
+    public function theme()
+    {
+        return view('index');
+    }
+
     public function slimming()
     {
         $slimming = Slimming::latest()->get(); 

@@ -11,9 +11,9 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Layout</a></li>
-              <li class="breadcrumb-item active">Top Navigation</li>
+              <li class="breadcrumb-item"><a href="{{url('')}}">Home</a></li>
+              
+              <li class="breadcrumb-item active">Input Data Pascalahiran</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -43,7 +43,7 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">No Handphone</label>
-                    <input type="text" required name="no_hp" class="form-control" id="exampleInputPassword1" placeholder="No Handphone">
+                    <input type="number" required name="no_hp" class="form-control" id="exampleInputPassword1" placeholder="No Handphone">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Alamat</label>
@@ -67,23 +67,36 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">proses Lahiran</label>
-                    <input type="text" required name="proses_lahiran" class="form-control" id="exampleInputPassword1" placeholder="Proses lahiran">
+                   <select name="proses_lahiran" class="form-control select2bs4">
+                    <option value="normal">Normal</option>
+                    <option value="sesar">Sesar</option>
+                    <option value="steril">Steril</option>
+                    <option value="buanglemak">Buang Lemak</option>
+                    <option value="lainya">lainya</option>
+                   </select>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Rencana ASI </label>
-                    <input type="text" required name="rencana_asi" class="form-control" id="exampleInputPassword1" placeholder="Rencana ASI">
+                    <label for="exampleInputPassword1">Rencana ASI </label><br>
+                    <input type="radio" name="rencana_asi" value="ya" lass="form-check-label"> Ya
+                    <input type="radio" name="rencana_asi" value="tidak"> Tidak
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Implan</label>
-                    <input type="text" required name="implan" class="form-control" id="exampleInputPassword1" placeholder="Implan">
+                    <label for="exampleInputPassword1">Implan</label><br>
+                    <input type="radio" name="implan" value="ya" class="form-check-label"> Ya
+                    <input type="radio" name="implan" value="tidak"> Tidak
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Perawatan</label>
-                    <input type="text" required name="perawatan" class="form-control" id="exampleInputPassword1" placeholder="Perawatan">
+                   <select name="perawatan" class="form-control select2bs4">
+                    <option value="tradisional">Perawatan Tradisional (Semua produk dari Dian Mustika)</option>
+                    <option value="slimming">Perawatan Pasca Lahiran Kombinasi Slimming</option>
+                   </select>
+                    
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Slimming</label>
-                    <input type="text" required name="slimming" class="form-control" id="exampleInputPassword1" placeholder="Slimming">
+                    <label for="exampleInputPassword1">Punya Produk Slimming Sendiri?</label><br>
+                    <input type="radio" name="slimming" value="ya" class="form-check-label"> Ya
+                    <input type="radio" name="slimming" value="tidak"> Tidak
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Riwayat Penyakit</label>

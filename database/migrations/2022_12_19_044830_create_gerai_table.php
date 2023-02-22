@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('kode_gerai');
             $table->string('nama_gerai');
             $table->string('alamat');
-            $table->string('whatsapp');
-            $table->string('gambar');
+            $table->string('whatsapp')->nullable();
+            $table->string('gambar')->nullable();
             $table->timestamps();
         });
     }

@@ -55,3 +55,6 @@ Route::get('admin/slimming/hapus/{id}',[AdminController::class,'hapus_slimming']
 //spa hamil
 Route::get('admin/spahamil',[AdminController::class,'spahamil']);
 
+//theme
+Route::get('admin/theme',[AdminController::class,'theme']);
+

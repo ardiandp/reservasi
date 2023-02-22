@@ -11,9 +11,8 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{url('daftar')}}">daftar</a></li>
-              <li class="breadcrumb-item active">Slimming</li>
+              <li class="breadcrumb-item"><a href="{{ url('') }}">Home</a></li>             
+              <li class="breadcrumb-item active">Input Form Slimming</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -39,19 +38,19 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Masukan Nam Lengkap</label>
-                    <input type="text" name="nama" class="form-control" placeholder="Name">
+                    <input type="text" require name="nama" class="form-control" placeholder="Name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">No Handphone</label>
-                    <input class="form-control" name="no_hp" placeholder="Kelas"></input>
+                    <input type="number" require class="form-control" name="no_hp" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Alamat</label>
-                    <input class="form-control" name="alamat" placeholder="Kelas"></input>
+                    <input class="form-control" require name="alamat" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Berat Badan</label>
-                    <input class="form-control" name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" require name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Lokasi Perwatan</label>
@@ -72,11 +71,11 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Riwayat Penyakit</label>
-                    <input class="form-control" name="riwayat_penyakit" placeholder="Kelas"></input>
+                    <input class="form-control" require name="riwayat_penyakit" placeholder="Riwayat Penyakit"></input>
                   </div>                 
                   <div class="form-group">
                     <label for="exampleInputPassword1">Keterangan Lain</label>
-                    <input class="form-control" name="keterangan_lain" placeholder="Kelas"></input>
+                    <input class="form-control" require name="keterangan_lain" placeholder="keteranan Lain"></input>
                   </div>    
                   
                  

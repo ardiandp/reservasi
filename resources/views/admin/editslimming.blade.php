@@ -11,9 +11,8 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{url('daftar')}}">daftar</a></li>
-              <li class="breadcrumb-item active">Slimming</li>
+              <li class="breadcrumb-item"><a href="{{url('admin')}}">Admin</a></li>              
+              <li class="breadcrumb-item active">Data Slimming</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -51,7 +50,7 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Berat Badan</label>
-                    <input class="form-control" {{ $slimming->berat_badan }}name="berat_badan" placeholder="Kelas"></input>
+                    <input class="form-control" value="{{ $slimming->berat_badan }}" name="berat_badan" placeholder="Kelas"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Lokasi Perwatan</label>

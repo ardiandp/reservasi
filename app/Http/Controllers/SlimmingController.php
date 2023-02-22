@@ -47,6 +47,7 @@ class SlimmingController extends Controller
             'gerai'=> 'required',
             'riwayat_penyakit'=> 'required',
             'keterangan_lain'=> 'required',
+            'status'=>'baru',
         ]);
       
         Slimming::create($request->all());

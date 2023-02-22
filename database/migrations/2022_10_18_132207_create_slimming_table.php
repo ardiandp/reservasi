@@ -18,11 +18,12 @@ return new class extends Migration
             $table->string('nama');
             $table->string('no_hp');
             $table->string('alamat');
-            $table->string('berat_badan');
-            $table->string('lokasi_perawatan');
-            $table->string('gerai');
-            $table->string('riwayat_penyakit');
-            $table->string('keterangan_lain');
+            $table->string('berat_badan')->nullable();
+            $table->string('lokasi_perawatan')->nullable();
+            $table->string('gerai')->nullable();
+            $table->string('riwayat_penyakit')->nullable();
+            $table->string('keterangan_lain')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

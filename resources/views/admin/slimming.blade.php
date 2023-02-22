@@ -1,4 +1,5 @@
-@include('layout.header');
+@include('theme.header');
+@include('theme.sidebar');
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -11,9 +12,8 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{ url('/admin') }}">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{url('daftar')}}">daftar</a></li>
-              <li class="breadcrumb-item active">Slimming</li>
+              <li class="breadcrumb-item"><a href="{{ url('/admin') }}">Admin</a></li>             
+              <li class="breadcrumb-item active">Data Slimming</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -73,4 +73,4 @@
 </aside>
 <!-- /.control-sidebar -->
 
-@include('layout.footer');
+@include('theme.footer');
