@@ -28,19 +28,23 @@
           <div class="col-lg-12">
 
             <div class="card-body">
-                <table id="example2" class="table table-bordered table-striped">
+            <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
+                    <th>No</th>
                     <th>Nama</th>
                     <th>Handphone</th>
-                    <th>Berat Badan(s)</th>
+                    <th>Berat</th>
                     <th>Lokasi Perawatan</th>
                     <th>Aksi</th>
                   </tr>
                   </thead>
                   <tbody>
+                  @php $no = 1; @endphp
                  @forelse ($slimming as $data )
+                 
                  <tr>
+                  <td>{{ $no++ }}</td>
                   <td>{{ $data->nama }}</td>
                   <td>{{$data->no_hp}}</td>
                   <td>{{ $data->berat_badan }}</td>
@@ -64,13 +68,6 @@
     </div><!-- /.container-fluid -->
   </div>
   <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-  <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
 
 @include('theme.footer');

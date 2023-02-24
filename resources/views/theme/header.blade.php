@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{url('public/AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{url('public/AdminLTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{url('public/AdminLTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{url('public/AdminLTE/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+
   <!-- Theme style -->
   <link rel="stylesheet" href="{{url('public/AdminLTE/dist/css/adminlte.min.css')}}">
 </head>
@@ -27,6 +33,12 @@
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+      <form action="/logout" method="post">
+            @csrf
+            <button type="submit" class="btn btn-primary">Logout</button>
+        </form>
       </li>
     </ul>
 

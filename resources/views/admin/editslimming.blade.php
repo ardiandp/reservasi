@@ -1,5 +1,5 @@
-@include('layout.header');
-
+@include('theme.header');
+@include('theme.sidebar');
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -111,14 +111,9 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
 
-  @include('layout.footer');
+
+
+  @include('theme.footer');
 

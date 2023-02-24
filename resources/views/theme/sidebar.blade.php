@@ -46,12 +46,45 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
+                <a href="{{url('dashboard')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Dashboard</p>
                 </a>
-              </li>
-             
+              </li>             
+            </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('admin')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pendafaran</p>
+                </a>
+              </li>             
+            </ul>
+          </li>     
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                MASTER
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('admin/gerai')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gerai</p>
+                </a>
+              </li>             
+            </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('admin/users')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>User</p>
+                </a>
+              </li>             
             </ul>
           </li>     
         

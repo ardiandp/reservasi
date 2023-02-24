@@ -7,6 +7,9 @@ use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\KontakController;
 
+// ini tambahan untuk login
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\RedirectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +25,7 @@ use App\Http\Controllers\KontakController;
     return view('welcome');
 }); */
 Route::get('/',[DaftarController::class,'index']);
+Route::get('login',[AuthController::class,'login']);
 
 Route::resource('slimming', SlimmingController::class);
 Route::resource('theme',ThemeController::class);
@@ -37,12 +41,7 @@ Route::post('simpanpascamelahirkan',[DaftarController::class,'pascalahiran_simpa
 //link Kontak 
 Route::get('kontak', [KontakController::class, 'index'])->name('kontak.index');
 
-// link admin 
-Route::get('admin',[AdminController::class,'index']);
-Route::get('admin/pascalahiran',[AdminController::class,'pascalahiran']);
-Route::get('admin/pascalahiran/edit/{id}',[AdminController::class,'edit_pascalahiran']);
-Route::post('admin/pascalahiran/update/{id}',[AdminController::class,'update_pascalahiran']);
-Route::get('admin/pascalahiran/hapus/{id}',[AdminController::class,'hapus_pascalahiran']);
+
 
 
 
@@ -58,3 +57,34 @@ Route::get('admin/spahamil',[AdminController::class,'spahamil']);
 //theme
 Route::get('admin/theme',[AdminController::class,'theme']);
 
+// ini adalah cek untuk login
+//  jika user belum login
+Route::group(['middleware' => 'guest'], function() {
+    Route::get('/', [AuthController::class, 'login'])->name('login');
+    Route::post('/', [AuthController::class, 'dologin']);
+
+});
+
+// untuk superadmin dan pegawai
+Route::group(['middleware' => ['auth', 'checkrole:1,2']], function() {
+    Route::post('/logout', [AuthController::class, 'logout']);
+    Route::get('/redirect', [RedirectController::class, 'cek']);
+});
+
+
+// untuk Admin
+Route::group(['middleware' => ['auth', 'checkrole:1']], function() {
+    Route::get('/superadmin', [SuperadminController::class, 'index']);
+    // link admin 
+Route::get('admin',[AdminController::class,'index']);
+Route::get('admin/pascalahiran',[AdminController::class,'pascalahiran']);
+Route::get('admin/pascalahiran/edit/{id}',[AdminController::class,'edit_pascalahiran']);
+Route::post('admin/pascalahiran/update/{id}',[AdminController::class,'update_pascalahiran']);
+Route::get('admin/pascalahiran/hapus/{id}',[AdminController::class,'hapus_pascalahiran']);
+});
+
+// untuk pegawai
+Route::group(['middleware' => ['auth', 'checkrole:2']], function() {
+    Route::get('/pegawai', [PegawaiController::class, 'index']);
+
+});
